@@ -234,13 +234,7 @@
               <goal>build-info</goal>
             </goals>
             <configuration>
-              <layout>WAR</layout>
-              <additionalProperties>
-                <encoding.source>${project.build.sourceEncoding}</encoding.source>
-                <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
-                <java.source>${java.version}</java.source>
-                <java.target>${java.version}</java.target>
-              </additionalProperties>
+              <packaging>war</packaging>
             </configuration>
           </execution>
         </executions>
