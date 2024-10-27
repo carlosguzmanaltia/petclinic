@@ -277,6 +277,17 @@
         <artifactId>cyclonedx-maven-plugin</artifactId>
       </plugin>
 
+      <!-- Plugin para empaquetar como WAR -->
+      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.4.0</version> <!-- O la versión compatible más reciente -->
+          <configuration>
+              <!-- Opcional: especifica el directorio de salida -->
+              <outputDirectory>${project.build.directory}</outputDirectory>
+          </configuration>
+      </plugin>
+
     </plugins>
   </build>
 
